@@ -1,0 +1,206 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset_1.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <link rel="icon" href="img/ico6.ico" type="image/x-icon" />
+    <!--设置网页小图标-->
+    <title>购物车页</title>
+</head>
+
+<body style="background-color:white">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--<link rel="stylesheet" href="css/common_diy.css">-->
+
+    <div class="header">
+        <div class="container1 clearfix">
+            <img class="logo-img" src="img/logo16.png">
+
+            <span class="h-registers"><a href="login.html" class="h-register">登录</a></span>
+            <span class="h-registers"><a href="register.php" class="h-register">注册</a></span>
+
+            <div class="search bar7">
+                <form class="clearfix" method="post" action="search.php">
+                    <input type="text" placeholder="请搜索衣服" name="crid" id="crid">
+                    <button value="搜索" type="submit"></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--导航-->
+    <div class="h-nav-bg">
+        <div class="container1">
+
+            <nav class="h-nav ">
+                <ul class="clearfix">
+                    <li class="h-nav-a-bg">
+                        <a href="suixinpei.html" class="h-nav-a ">首页</a>
+                    </li>
+                    <li class="h-nav-a-bg">
+                        <a href="diyindex.php" class="h-nav-a ">推荐</a>
+                    </li>
+                    <li class="h-nav-a-bg">
+                        <a href="#" class="h-nav-a ">男装</a>
+                        <div class="h-dropdown">
+                            <div><a class="h-dropdown-a" href="#clothes">上衣</a></div>
+                            <div><a class="h-dropdown-a" href="#">裤子</a></div>
+                            <div><a class="h-dropdown-a" href="#">夏装</a></div>
+                        </div>
+                    </li>
+                    <li class="h-nav-a-bg"><a href="#" class="h-nav-a">女装</a>
+                        <div class="h-dropdown">
+                            <div><a class="h-dropdown-a" href="#">上衣</a></div>
+                            <div><a class="h-dropdown-a" href="#">裤子</a></div>
+                            <div><a class="h-dropdown-a" href="#">夏装</a></div>
+                        </div>
+                    </li>
+                    <li class="h-nav-a-bg">
+                        <a href="gouwuche.html" class="h-nav-a ">购物车</a>
+                    </li>
+                    <li class="h-nav-a-bg">
+                        <a href="index.html" class="h-nav-a ">Diy搭配</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+            </div>
+            <div class="order_content">
+
+
+                <ul class="order_lists">
+                    <form method="post" action="shopping.php" target="_blank">
+                        <input type="hidden" class="inventory" value="50">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_1"
+                                value="1" class="son_check">
+                            <label for="checkbox_1"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img
+                                        src="img_allmain/C01.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">潮澎湃綠短袖</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p class="size">S</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">128</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="numprice"><span class="sum_price">128</span>￥</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </form>
+                </ul>
+
+                <ul class="order_lists">
+                    <form method="post" action="shopping.php" target="_blank">
+                        <input type="hidden" class="inventory" value="50">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_1"
+                                value="1" class="son_check">
+                            <label for="checkbox_1"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img
+                                        src="img_allmain/C02.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">潮澎湃短袖</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p class="size">S</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">128</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="numprice"><span class="sum_price">128</span>￥</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </form>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+        <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00￥</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model delete">
+        <p class="title">删除商品<span class="closeModel">X</span></p>
+        <p>您确认要删除该商品吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure dialogsure">确定</a><a href="javascript:;"
+                class="dialog-close">关闭</a></div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model balance">
+        <p class="title">结算商品<span class="closeModel">X</span></p>
+        <p id="balanceMoney" style="font-size: 20px;font-weight: bold"></p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure" id="sure">确定</a><a href="javascript:;"
+                class="dialog-close">关闭</a></div>
+    </section>
+    <script src="js/jquery2013.min.js"></script>
+    <script src="js/carts.js"></script>
+
+</body>
+
+</html>
