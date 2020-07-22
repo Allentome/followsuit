@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/slide.css">
+
+	<link rel="stylesheet" href="css/waterFall.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/head.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+	<script type="text/javascript" src="js/lanjiazai.js"></script>
+
+	<link rel="stylesheet" href="css/lanjiazai.css">
+
+	<script type="text/javascript" src="../shixun11/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../shixun11/js/lanjiazai.js"></script>
+
+	<link rel="icon" href="img/ico6.ico" type="image/x-icon" />
+	<!--设置网页小图标-->
+	<title>随心配首页</title>
+</head>
+
+<body>
+
+	<!--logo-->
+	<div class="header">
+		<div class="container1 clearfix">
+			<img class="logo-img" src="img/logo16.png">
+
+			<span class="h-registers"><a href="login.html" class="h-register">登录</a></span>
+			<span class="h-registers"><a href="register.php" class="h-register">注册</a></span>
+
+			<div class="search bar7">
+				<form class="clearfix" method="post" action="search.php">
+					<input type="text" placeholder="请搜索衣服" name="crid" id="crid">
+					<button value="搜索" type="submit"></button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<!--导航-->
+	<div class="h-nav-bg">
+
+		<div class="container1">
+			<nav class="h-nav ">
+
+				<ul class="clearfix">
+					<li class="h-nav-a-bg">
+						<a href="suixinpei.html" class="h-nav-a ">首页</a>
+					</li>
+					<li class="h-nav-a-bg">
+						<a href="#" class="h-nav-a ">推荐</a>
+					</li>
+					<li class="h-nav-a-bg">
+						<a href="#" class="h-nav-a ">男装</a>
+						<div class="h-dropdown">
+							<div> <a class="h-dropdown-a" href="#clothes">上衣</a></div>
+							<div> <a class="h-dropdown-a" href="#">裤子</a></div>
+							<div> <a class="h-dropdown-a" href="#">夏装</a></div>
+						</div>
+					</li>
+					<li class="h-nav-a-bg"><a href="#" class="h-nav-a">女装</a>
+						<div class="h-dropdown">
+							<div> <a class="h-dropdown-a" href="#">上衣</a></div>
+							<div> <a class="h-dropdown-a" href="#">裤子</a></div>
+							<div> <a class="h-dropdown-a" href="#">夏装</a></div>
+						</div>
+					</li>
+					<li class="h-nav-a-bg">
+						<a href="gouwuche.php" class="h-nav-a ">购物车</a>
+					</li>
+					<li class="h-nav-a-bg">
+						<a href="index.html" class="h-nav-a ">Diy搭配</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!--轮播-->
+
+	<!-- <?php include 'slide.php'?> -->
+	<div class="clearfix  hidden">
+		<div id="h-news_img" class="container1">
+			<div id="h-img_list">
+				<ul>
+					<li class="h-imgs"> <img src="img/76.jpg">
+					</li>
+					<li class="h-imgs"> <img src="img/80.jpg">
+					</li>
+					<li class="h-imgs"> <img src="img/77.jpg">
+					</li>
+					<li class="h-imgs"> <img src="img/79.jpg">
+					</li>
+				</ul>
+			</div>
+			<div id="h-num">
+				<ul class="clearfix" style="width: 100px">
+					<li class="h-num_list">
+					</li>
+					<li class="h-num_list">
+					</li>
+					<li class="h-num_list">
+					</li>
+					<li class="h-num_list">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--    瀑布流-->
+
+
+	<?php include 'lanjiazai.php' ?>
+
+	<div class="container1 water clearfix">
+		<div class="water-line"></div>
+		<div class="water-title">每天十点准时更新</div>
+		<div class="water-line"></div>
+
+	</div>
+	<!--代码部分begin-->
+	<div class="container1">
+		<div class="moreload">
+			<div class="hidden3">
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C01.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="details.php" target="_blank">
+						<a name="goodsid" href="../details/details.php?id=' . $row['goodsid'] . '" target="_blank">
+							<img src="totalimg/C02.png" width="150" height="150"></a>
+						<div class="div11" style="height: 30px;">
+							<div style="color: red;font-size: 20px;float: left;">￥128</div>
+							<div>
+								<h6>包邮</h6>
+							</div>
+						</div>
+						<div class="div11">潮牌绿短袖</div></a>
+						<div class="div11" style="height: 30px">
+							<div style="float: left;color: #3c3c3c;font-size: 10px">潮牌
+							</div>
+							<div style="float: right;font-size: 10px ;color: #4e4e4e">1人付款
+							</div>
+						</div>
+						<input name="goodsid" type="hidden" value="<?php echo $row['goodsid'] ?>">
+						<input value=" " type="submit"
+							style="cursor:pointer;width: 275px;height: 350px; background-color: white;top: 0;position: absolute;opacity: 0.1">
+					</form>
+				</li>
+
+			</div>
+			<ul class="list">数据加载中，请稍后...</ul>
+			<div class="more"><a href="javascript:;" onClick="moreload.loadMore();">加载更多</a></div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		var _content = []; //临时存储li循环内容
+		var moreload = {
+			_default: 9, //默认显示图片个数
+			_loading: 6,  //每次点击按钮后加载的个数
+			init: function () {
+				var lis = $(".moreload .hidden3 li");
+				$(".moreload ul.list").html("");
+				for (var n = 0; n < moreload._default; n++) {
+					lis.eq(n).appendTo(".moreload ul.list");
+				}
+				$(".moreload ul.list img").each(function () {
+					$(this).attr('src', $(this).attr('realSrc'));
+				})
+				for (var i = moreload._default; i < lis.length; i++) {
+					_content.push(lis.eq(i));
+				}
+				$(".moreload .hidden3").html("");
+			},
+			loadMore: function () {
+				var mLis = $(".moreload ul.list li").length;
+				for (var i = 0; i < moreload._loading; i++) {
+					var target = _content.shift();
+					if (!target) {
+						$('.moreload .more').html("<p>全部加载完毕...</p>");
+						break;
+					}
+					$(".moreload ul.list").append(target);
+					$(".moreload ul.list img").eq(mLis + i).each(function () {
+						$(this).attr('src', $(this).attr('realSrc'));
+					});
+				}
+			}
+		}
+		moreload.init();
+	</script>
+
+
+	<?php include 'foot.php' ?>
